@@ -1,0 +1,236 @@
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 4rem;
+}
+
+.buttons-mob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.play-button, .restart-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.play-button-mob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100%;
+}
+
+.ready{
+    margin: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container-mob{
+    display: flex;
+    flex-direction: column;
+}
+
+.vs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.vs-mob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.vs-text{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.player-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-container-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.computer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.computer-container-mob{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.choice{
+    border: 1px solid black;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.choice-mob{
+    border: 1px solid black;
+    height: 50px;
+    border-radius: 50%;
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+.choice-disable{
+    border: 1px solid black;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.choice-disable-mob{
+    border: 1px solid black;
+    height: 50px;
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.player-choice{
+    color: rgb(0, 176, 0);
+    animation: move1 2s infinite alternate-reverse;
+}
+
+@keyframes move1 {
+    from {transform: rotate(-50deg);}
+    to {transform: rotate(40deg);}
+  }
+
+
+.computer-choice{
+    color: rgb(255, 0, 0);
+    animation: move 2s infinite alternate-reverse;
+}
+
+@keyframes move {
+    from {transform: rotate(50deg);}
+    to {transform: rotate(-40deg);}
+  }
+
+
+.choice:hover{
+    background-color: rgba(202, 241, 202, 0.701);
+    color: rgb(0, 176, 0);
+    animation: scale 1s infinite alternate-reverse;
+}
+
+@keyframes scale {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+  }
+
+.pointer {
+    cursor: pointer;
+}
+
+.pointer-buttons{
+    color: rgb(146, 95, 160);
+    animation: play 2s infinite alternate-reverse;
+}
+
+@keyframes play {
+    from {transform: scale(0.4);}
+    to {transform: scale(0.6);}
+  }
+
+.result{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(172, 22, 40);
+    animation: results 1s infinite alternate-reverse;
+}
+
+@keyframes results {
+    from {transform: translateY(-20px);}
+    to {transform: translateY(10px);}
+  }
+
+.choose-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+
+.choose-title1{
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    animation: choose1 2s infinite alternate-reverse;
+}
+
+.choose-title1-mob{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    animation: choose1 2s infinite alternate-reverse;
+    margin-bottom: 50px;
+}
+
+@keyframes choose1 {
+    from {transform: translateY(8px);}
+    to {transform: translateY(26px);}
+}
+
+.playerimg{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.playerimg-mob{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    width: 100%;
+}
+
+.computerimg-mob, .Scissors-mob, .Paper-mob, .Rock-mob{
+    width: 100%;
+}
+
+.res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
